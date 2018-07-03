@@ -6,6 +6,7 @@ using System;
 using System.IO;
 using System.Runtime.InteropServices;
 using System.Threading;
+using System.Windows.Forms;
 
 namespace IISWallpaper
 {
@@ -25,10 +26,10 @@ namespace IISWallpaper
             chromeOptions.AddArgument("--headless");
             driver = new ChromeDriver(chromeOptions);
 
-            driver.Manage().Window.FullScreen();
-            driver.Navigate().GoToUrl("http://www.ustream.tv/embed/17074538?html5ui?v=3&controls=false&autoplay=true");
+            driver.Manage().Window.Size = SystemInformation.PrimaryMonitorSize;
+            driver.Navigate().GoToUrl("http://www.ustream.tv/embed/17074538?html5ui?v=3&controls=false&autoplay=true&quality=hd");
             Thread.Sleep(10000);
-            driver.FindElementById("ComponentsContainer").Click();
+            driver.FindElementByClassName("play-icon").Click();
 
             var path = Path.Combine(@"C:\Temp", "wallpaper.jpeg");
             RegistryKey key = Registry.CurrentUser.OpenSubKey(@"Control Panel\Desktop", true);
