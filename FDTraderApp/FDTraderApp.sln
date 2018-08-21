@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.27703.2035
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FDTraderApp", "FDTraderApp.csproj", "{A41EAE64-DCBD-4662-BFE8-5E448DD2452D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UnitTests", "UnitTests\UnitTests.csproj", "{B20269A0-5E62-403F-91E0-F4D0E8E17D64}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{A41EAE64-DCBD-4662-BFE8-5E448DD2452D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A41EAE64-DCBD-4662-BFE8-5E448DD2452D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A41EAE64-DCBD-4662-BFE8-5E448DD2452D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A41EAE64-DCBD-4662-BFE8-5E448DD2452D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B20269A0-5E62-403F-91E0-F4D0E8E17D64}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B20269A0-5E62-403F-91E0-F4D0E8E17D64}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B20269A0-5E62-403F-91E0-F4D0E8E17D64}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B20269A0-5E62-403F-91E0-F4D0E8E17D64}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {3DF33CE7-FD0A-4C60-A004-F06DE8525D85}
+	EndGlobalSection
+EndGlobal
